@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="scss/home.css">
+
+    <title>LISES FOODBLOG</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- IMG+TEXT -->
+      <header class="row">
+        <div class="col-12 position-relative p-0">
+          <img class="w-100" src="/src/img/Cover image.png" alt="Cover Image">
+          <div id="overlay" class="w-100 h-100 position-absolute"></div>
+        </div>
+
+        <div class="col-12 position-absolute p-0">
+          <div id="imgText">
+            <h1 class="font-weight-bold text-white">The beauty of <br>vegan food</h1>
+          </div>
+        </div>        
+      </header>
+
+      <!-- NAV+TITLE -->
+      <div id="navContainer" class="row mt-5">
+        <nav class="nav col-12 mt-4 p-0 justify-content-center text-uppercase">
+          <a class="nav-link font-weight-bold text-dark mx-3 active" href="#">Home</a>
+          <a class="nav-link font-weight-bold text-dark mx-3" href="#">Recipes</a>
+          <a class="nav-link font-weight-bold text-dark mx-3" href="#">Authors</a>
+        </nav>
+
+        <div class="col-12 d-flex justify-content-center">
+          <h1 id="blogTitle" class="font-weight-bold text-uppercase d-inline-block my-3">Lises Foodblog</h1>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <main class="row justify-content-center">
+        <div class="col-11 col-sm-10 col-xl-7 pt-5" id="articleContainer">
+          <!-- <article class="card border-0 mb-4" id="postID-1">
+            <div class="card-body">
+              <a class="postLink"><h2 class="articleTitle card-title text-uppercase font-weight-bold my-4">Vegan Banana Pancakes</h2></a>
+              <a class="postLink"><img class="articleImg card-img-top d-block mx-auto" src="src/img/303-dairyfree-banana-pancakes-LH-76e8c7fb-fd90-4ddb-bce9-aa615ce9fde2-0-1400x919.jpg" alt="Vegan Banana Pancakes"></a>
+              <p class="card-text mt-5"><time class="articleDate text-white p-1">02 September 2018</time></p>
+              <p class="articleText card-text my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis interdum lacus. Maecenas rhoncus lectus eu velit placerat pellentesque. Cras sem eros, efficitur in malesuada id, interdum in tortor. Vivamus at nisi varius, sollicitudin leo sit amet, iaculis sapien.</p>
+              <p class="articleAuthor mt-4">By Jens-Ole</p>
+            </div>
+          </article>
+
+          <article class="card border-0 mb-4" id="postID-2">
+            <div class="card-body">
+              <a class="postLink"><h2 class="articleTitle card-title text-uppercase font-weight-bold my-4">Vegan Banana Pancakes</h2></a>
+              <a class="postLink"><img class="articleImg card-img-top d-block mx-auto" src="src/img/303-dairyfree-banana-pancakes-LH-76e8c7fb-fd90-4ddb-bce9-aa615ce9fde2-0-1400x919.jpg" alt="Vegan Banana Pancakes"></a>
+              <p class="card-text mt-5"><time class="articleDate text-white p-1">02 September 2018</time></p>
+              <p class="articleText card-text my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis interdum lacus. Maecenas rhoncus lectus eu velit placerat pellentesque. Cras sem eros, efficitur in malesuada id, interdum in tortor. Vivamus at nisi varius, sollicitudin leo sit amet, iaculis sapien.</p>
+              <p class="articleAuthor mt-4">By Jens-Ole</p>
+            </div>
+          </article> -->
+        </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="row border-top mt-5">
+        <div class="col-12 text-center">
+          <p class="text-center my-3">Copyright © 2018, WHITE</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- BOOTSTRAP TOOLS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+    
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Personal JS -->
+    <script src="js/model/user.js"></script>
+    <script src="js/model/post.js"></script>
+    <script src="js/model/comment.js"></script>
+
+    <script src="js/view/view.js"></script>
+    <script src="js/view/homeView.js"></script>
+    <script src="js/view/postView.js"></script>
+    <script src="js/view/adminView.js"></script>
+
+    <script src="js/ctrl/ctrl.js"></script>
+    <script src="js/ctrl/dataAccess.js"></script>
+  </body>
+</html>

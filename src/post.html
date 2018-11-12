@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="scss/post.css">
+
+    <title>LISES FOODBLOG</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- NAV+TITLE -->
+      <div id="top" class="row py-2">
+        <div class="col-12 col-sm-5 col-md-4 d-flex justify-content-center justify-content-sm-end align-self-center">
+          <h4 class="m-0 font-weight-bold text-uppercase text-white">Lises Foodblog</h4>
+        </div>
+        
+        <nav class="nav col-12 col-sm-7 col-md-8 justify-content-center justify-content-sm-start">
+          <a class="nav-link text-uppercase text-white active" href="index.html">Home</a>
+          <a class="nav-link text-uppercase text-white" href="#">Recipes</a>
+          <a class="nav-link text-uppercase text-white" href="#">Authors</a>
+        </nav>
+      </div>
+
+      <!-- IMG+TEXT -->
+      <header class="row justify-content-center">
+        <div class="col-12 position-relative p-0" id="headerImgContainer">
+          <!-- <img class="w-100" src="/src/img/B76CD657-9A91-48F3-8D1B-F076878C4401__1445432764_86.82.108.171.jpg" alt="Delicius Vegan Miso Soup With Tofu"> -->
+          <div id="overlay" class="w-100 h-100 position-absolute"></div>
+        </div>
+
+        <div class="col-12 col-sm-10 col-md-8 col-xl-7 position-absolute align-self-center">
+          <div id="imgText">
+            <!-- <p class="font-weight-bold text-uppercase text-white my-0" id="postDate">2 September 2018</p>
+            <h1 class="font-weight-bold text-uppercase text-white my-2" id="postTitle">Delicius Vegan Miso Soup With Tofu</h1>
+            <p class="font-weight-bold text-uppercase text-white my-3" id="postAuthor">By Lise Lisesen</p> -->
+            <p class="font-weight-bold text-uppercase text-white my-0" id="postDate"></p>
+            <h1 class="font-weight-bold text-uppercase text-white my-2" id="postTitle"></h1>
+            <p class="font-weight-bold text-uppercase text-white my-3" id="postAuthor"></p>
+          </div>
+        </div>
+      </header>
+
+      <!-- CONTENT+COMMENTS-->
+      <main class="row justify-content-center">
+        <div class="col-11 col-sm-10 col-xl-7">
+            <section class="mb-2" id="contentContainer"></section>
+            <!-- <article class="py-5 px-md-5 mx-md-5" id="postContent">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque erat orci, aliquet eget mi non, viverra feugiat ligula. Nunc nunc lectus, efficitur non convallis et, lobortis eget mi. Quisque sit amet dapibus libero. 
+              
+            <br><br>              
+            In odio turpis, maximus id molestie sit amet, volutpat et purus. Morbi condimentum massa diam, at ullamcorper mi finibus id. Vivamus sagittis, augue a lacinia semper, dolor metus egestas sem, cursus dictum mi orci a lacus. 
+            
+            <br><br>
+            Maecenas euismod, risus eu porta imperdiet, turpis risus luctus urna, id sagittis dolor est a libero. Mauris eu auctor ipsum. Integer in dolor erat. In posuere diam odio, eget posuere orci placerat ac. Duis eleifend fringilla commodo. Proin sollicitudin arcu et nisl commodo, non imperdiet lorem ornare.
+
+            Pellentesque euismod fermentum aliquam. Ut euismod urna sed lectus luctus placerat. Aenean et sem eu libero suscipit aliquam vitae et magna. Vivamus ullamcorper nibh quis lorem sollicitudin, ac cursus tortor bibendum. Sed tempor nisi turpis, id placerat tellus placerat eu. Maecenas fermentum, est ut egestas congue, urna turpis fringilla odio, non cursus nunc risus et augue. Quisque condimentum lectus a quam rutrum vestibulum et vitae nulla. Sed sed sapien sed massa pretium feugiat. Vivamus feugiat porttitor sem, vitae mattis orci cursus in.
+            
+            Ut facilisis ornare erat nec eleifend. In in ligula a felis facilisis tincidunt. Sed sed mauris et odio bibendum mattis. Sed ultrices mi elit. Duis tempor blandit erat a efficitur. Nulla ac condimentum dui. Mauris venenatis vestibulum est egestas egestas. Aenean gravida gravida ultrices. Pellentesque a neque rutrum sem malesuada sagittis posuere ac nibh. Proin et urna rhoncus, ultricies urna non, scelerisque dui. Vestibulum velit nisi, egestas quis justo at, consectetur pretium magna. Nullam viverra dignissim dolor, in placerat leo. Phasellus fringilla, nunc non lobortis ultrices, tellus orci luctus erat, quis commodo nisl odio eu odio. Cras faucibus tincidunt elit, molestie pharetra nisl. Suspendisse euismod risus vitae nisl venenatis, id molestie purus rutrum.
+            
+            Donec nunc nisl, mattis id sapien eu, sollicitudin hendrerit urna. Maecenas at porta magna, luctus cursus tortor. Praesent auctor mi nisi, nec faucibus lacus tincidunt eu. Maecenas quam felis, ultricies vitae libero at, posuere aliquam diam. Quisque sodales ipsum eu libero auctor finibus. Nulla ultrices felis eros, sit amet ultricies nunc luctus placerat. Quisque consectetur diam vel gravida tempus. Curabitur hendrerit lacinia mauris non dignissim. Donec nec lacinia elit. Quisque finibus leo a lacus consequat, eu dapibus dui varius. Nam mattis ipsum eu enim tempor suscipit. Praesent convallis purus dapibus ipsum vehicula, a lacinia velit volutpat. Sed quis efficitur tortor. Integer sed accumsan justo, non venenatis ipsum. Suspendisse potenti. Aenean nulla risus, vestibulum id tellus non, mattis ultricies ante.
+            
+            Aliquam metus purus, tristique vitae leo in, pulvinar vestibulum tortor. Vivamus lacinia lorem ac neque rutrum vehicula. Suspendisse viverra eleifend nibh eget tincidunt. Nullam a vehicula urna, sit amet varius neque. Curabitur felis urna, tempus sed enim a, bibendum ornare quam. Maecenas tortor lectus, blandit quis dapibus sit amet, congue a eros. Ut vulputate imperdiet dui, sit amet vestibulum nulla maximus eget. Maecenas eget est ligula. Maecenas id placerat orci. Aliquam tempus, tellus vitae condimentum tempor, magna metus bibendum massa, vel hendrerit magna tellus ut felis. Etiam quis enim id tellus placerat tempor ac quis turpis. Donec in tortor vel magna congue posuere id luctus leo. Duis ornare in elit quis ullamcorper. Etiam in dapibus orci.</p>
+          </article> -->
+
+          <!-- COMMENTS -->
+          <section class="px-md-5 mx-md-5" id="commentContainer">
+            <!-- <article class="d-flex mb-5" id="commentID-99">
+              <img src="/src/img/Author.jpg" alt="John Doe">
+            
+              <div class="d-flex flex-column justify-content-between py-1 ml-4">
+                <p class="m-0 font-weight-bold" id="commentAuthor">John Doe</p>
+                <p class="m-0" id="commentContent">Wow, super lækker opskrift. Den skal jeg helt sikkert prøve sammen med børnene i aften.</p>
+                <a class="commentReply"><p class="m-0 text-muted">Svar</p></a>
+              </div>
+            </article> -->
+          </section>
+        </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="row border-top mt-5">
+        <div class="col-12 text-center">
+          <p class="text-center my-3">Copyright © 2018, WHITE</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- BOOTSTRAP TOOLS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Personal JS -->
+    <script src="js/model/user.js"></script>
+    <script src="js/model/post.js"></script>
+    <script src="js/model/comment.js"></script>
+
+    <script src="js/view/view.js"></script>
+    <script src="js/view/homeView.js"></script>
+    <script src="js/view/postView.js"></script>
+    <script src="js/view/adminView.js"></script>
+
+    <script src="js/ctrl/ctrl.js"></script>
+    <script src="js/ctrl/dataAccess.js"></script>
+  </body>
+</html>

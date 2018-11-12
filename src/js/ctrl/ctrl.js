@@ -57,7 +57,7 @@ class Controller {
                 sessionStorage.setItem('postID', postID);
     
                 //Changes page to post.html
-                document.location = '/post.html';
+                document.location = '/src/post.html';
             });
         });
     }

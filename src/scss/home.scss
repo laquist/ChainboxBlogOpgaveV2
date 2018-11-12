@@ -1,0 +1,126 @@
+@import 'main';
+
+// Variables
+$linkColor: #3742fa;
+
+//Breakpoints
+$breakPointOneWidth: 1200px;
+$breakPointTwoWidth: 900px;
+$breakPointThreeWidth: 600px;
+
+@mixin breakPointOne {
+    @media (max-width: #{$breakPointOneWidth}) {
+      @content;
+    }
+}
+
+@mixin breakPointTwo {
+    @media (max-width: #{$breakPointTwoWidth}) {
+      @content;
+    }
+}
+
+@mixin breakPointThree {
+    @media (max-width: #{$breakPointThreeWidth}) {
+      @content;
+    }
+}
+
+// HEADER
+header {
+    // header img
+    img {
+        object-fit: cover;
+    }
+
+    // #imgText h1
+    h1 {
+        font-size: 86px;
+        padding: 55px 80px;
+
+        @include breakPointOne {
+            font-size: 60px;
+        }
+
+        @include breakPointTwo {
+            font-size: 40px;
+        }
+
+        @include breakPointThree {
+            font-size: 30px;
+        }
+    }
+}
+
+// NAV
+
+#navContainer {
+    // Breakpoints
+    @include breakPointOne {
+        margin-top: 2rem!important;
+    }
+
+    @include breakPointThree {
+        margin-top: 1rem!important;
+    }
+
+    nav {
+        // nav a...
+        a::before {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0px auto;
+            opacity: 0;
+        }
+        
+        
+        // ** Denne kan vel extende? **
+        // nav a...
+        a.active::before {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $linkColor;
+            margin: 0px auto;
+            opacity: 1;
+        }
+    }
+}
+
+// ARTICLES
+.card-body {
+    .postLink:hover {
+        cursor: pointer;
+    
+        h2 {
+            text-decoration-line: underline;
+        }
+    }
+
+    // .card-body img
+    img {
+        max-width: 970px;
+        max-height: 516px;
+        object-fit: cover;
+    }
+
+    // .card-body h2, .card-body p
+    h2, p {
+        padding: 0% 14%;
+    }
+
+    .articleDate {
+        background-color: $linkColor;
+    }
+
+    .articleText {
+        line-height: 2.3;
+        max-height: 100px;
+        overflow-y: hidden;
+    }
+}
