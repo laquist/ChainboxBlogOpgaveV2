@@ -9527,4 +9527,65 @@ a.text-dark:hover, a.text-dark:focus {
 footer {
   font-size: 0.9rem;
 }
+
+body, html {
+  height: 100%;
+}
+
+#title {
+  font-size: 1.4rem;
+}
+
+#secondRow aside {
+  background-color: #eceeef;
+}
+
+#secondRow aside .navContainer .nav .active {
+  background-color: #1c7cd5;
+  color: white !important;
+}
+
+#secondRow aside .navContainer .nav a {
+  font-size: 1.05rem;
+}
+
+#secondRow aside .navContainer .nav .nav-link {
+  padding: 0.5rem 2rem !important;
+}
+
+@media (max-width: 992px) {
+  #secondRow aside .navContainer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  #secondRow aside:first-child {
+    padding: 0.3rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  #secondRow {
+    height: auto !important;
+  }
+}
+
+main form {
+  max-width: 620px;
+}
+
+main form #choseImg p {
+  direction: rtl;
+}
+
+main form #imageTextHelp {
+  font-size: 0.9rem;
+}
+
+main form #publishBtn {
+  background-color: #1c7cd5;
+  border-color: #1c7cd5;
+  font-size: 1.05rem;
+}
 /*# sourceMappingURL=admin.css.map */

@@ -9556,6 +9556,24 @@ header h1 {
   }
 }
 
+#navContainer nav a::before, #navContainer nav a.active::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0px auto;
+}
+
+#navContainer nav a::before {
+  opacity: 0;
+}
+
+#navContainer nav a.active::before {
+  background-color: #3742fa;
+  opacity: 1;
+}
+
 @media (max-width: 1200px) {
   #navContainer {
     margin-top: 2rem !important;
@@ -9566,27 +9584,6 @@ header h1 {
   #navContainer {
     margin-top: 1rem !important;
   }
-}
-
-#navContainer nav a::before {
-  content: '';
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin: 0px auto;
-  opacity: 0;
-}
-
-#navContainer nav a.active::before {
-  content: '';
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #3742fa;
-  margin: 0px auto;
-  opacity: 1;
 }
 
 .card-body .postLink:hover {

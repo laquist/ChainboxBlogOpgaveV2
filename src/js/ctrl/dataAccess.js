@@ -1,3 +1,8 @@
+// 'use strict';
+// import {axios} from '../../../node_modules/axios';
+// import axios from 'axios';
+// import axios from '../../../node_modules/axios';
+
 class DataAccess {
     //Load all users
     static loadAllUsers (callBackFunc) {
@@ -9,9 +14,10 @@ class DataAccess {
             comment: false,
             commentId: 0
         };
-
+        
         DataAccess.loadData(requestInfo, callBackFunc);
     }
+    
 
     //Load specific user
     static loadUser (userID, callBackFunc) {

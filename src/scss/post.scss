@@ -23,6 +23,13 @@ header {
     p {
         font-size: 0.9rem;
     }
+
+    @media screen and (max-width: 576px) {
+        // #imgText h1
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
 }
 
 // MAIN
@@ -33,6 +40,10 @@ main {
         
         font-size: 1.1rem;
         line-height: 2.3rem;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 0px;
+        }
     }
 
     #commentContainer {
@@ -46,18 +57,5 @@ main {
         .commentReply:hover {
             cursor: pointer;
         }
-    }
-}
-
-// MEDIA QUERIES
-@media screen and (max-width: 768px) {
-    main article {
-        margin-top: 0px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    #imgText h1 {
-        font-size: 1.8rem;
     }
 }

@@ -38,6 +38,7 @@ header {
         font-size: 86px;
         padding: 55px 80px;
 
+        // Breakpoints
         @include breakPointOne {
             font-size: 60px;
         }
@@ -53,8 +54,31 @@ header {
 }
 
 // NAV
-
 #navContainer {
+    nav {
+        %activeNav {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0px auto;
+        }
+
+        // nav a...
+        a::before {
+            @extend %activeNav;
+            opacity: 0;
+        }
+        
+        // nav a...
+        a.active::before {
+            @extend %activeNav;
+            background-color: $linkColor;
+            opacity: 1;
+        }
+    }
+
     // Breakpoints
     @include breakPointOne {
         margin-top: 2rem!important;
@@ -62,33 +86,6 @@ header {
 
     @include breakPointThree {
         margin-top: 1rem!important;
-    }
-
-    nav {
-        // nav a...
-        a::before {
-            content: '';
-            display: block;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            margin: 0px auto;
-            opacity: 0;
-        }
-        
-        
-        // ** Denne kan vel extende? **
-        // nav a...
-        a.active::before {
-            content: '';
-            display: block;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: $linkColor;
-            margin: 0px auto;
-            opacity: 1;
-        }
     }
 }
 
